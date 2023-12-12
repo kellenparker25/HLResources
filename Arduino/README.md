@@ -1,4 +1,4 @@
-# Getting Started with Arduino
+# Getting Started with Arduino (45-60 min)
 #### Step 1: Download Software and Write First Program!
 _Follow along_ with [Arduino Video Tutorial](https://www.youtube.com/watch?v=fJWR7dBuc18&list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP)
    - Materials:
