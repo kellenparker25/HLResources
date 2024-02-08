@@ -7,7 +7,7 @@ In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Contr
 1. Use a Windows 7+ machine
 2. [Create an account or login to Ultraleap](https://leap2.ultraleap.com/account-register/)
 4. Download [Legacy Orion 4.1 Handtracking Software](https://staging.corporate.ultraleap.com/download/software?name=tracking-software&version=4.1.0&platform=windows)
-5. Plug in Leap to computer
+5. Plug in Leap to computer and a new leap motion icon should appear. It should be green.
 
 ## Using Leap Motion Controller 1 with P5.js online editor
 1. Open [Brick Breaker](https://editor.p5js.org/HybridLabCCA/sketches/CS4ZA99aJ) and see if it works
