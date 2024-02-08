@@ -9,7 +9,12 @@ In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Contr
 4. Download [Legacy Orion 4.1 Handtracking Software](https://staging.corporate.ultraleap.com/download/software?name=tracking-software&version=4.1.0&platform=windows)
 5. Plug in Leap to computer
 
-2. Update your index.html file to reference that library
+## Using Leap Motion Controller 1 with P5.js online editor
+1. Open [Brick Breaker](https://editor.p5js.org/HybridLabCCA/sketches/CS4ZA99aJ) and see if it works
+2. Create a new p5 project
+3. Download leap p5 library [here](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/leap-1.1.1.min.js)
+4. Upload that file to your p5 project [tutorial on how to upload files to online editor](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/7-arrays/upload-editor)
+5. Update your index.html file to reference that library
    ```
    <!DOCTYPE html>
       <html>
