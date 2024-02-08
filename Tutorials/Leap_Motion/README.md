@@ -11,11 +11,28 @@ In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Contr
 5. Plug in Leap to computer
 
 ## Leap Motion with P5.js
-1. Upload the following libraries to your P5.js sketch
-   - [p5.collide2d.js](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/P5-Brick-Breaker/p5.collide2d.js)
+1. Upload this leap library to your P5.js sketch
    - [leap-1.1.1.min.js](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/P5-Brick-Breaker/leap-1.1.1.min.js)
-2. Reference those libraries in the index.html file so your program knows where to find them
+2. Update your index.html file to reference that library
+   ```
+   <!DOCTYPE html>
+      <html>
+        <head>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
 
+          <!-- ADD THIS LINE OF CODE -->
+          <script src="leap-1.1.1.min.js"></script>
+   
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <meta charset="utf-8" />
+      
+        </head>
+        <body>
+          <script src="sketch.js"></script>
+        </body>
+      </html>
+   ```
 ## Examples
 1. P5.js Examples
    - [Brick Breaker](https://editor.p5js.org/HybridLabCCA/sketches/CS4ZA99aJ)
