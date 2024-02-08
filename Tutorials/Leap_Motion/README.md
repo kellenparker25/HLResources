@@ -10,7 +10,7 @@ In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Contr
 4. Download [Gemini Handtracking Software](https://leap2.ultraleap.com/gemini-downloads/) for respective system (using Windows download for this tutorial)
 5. Plug in Leap to computer
 
-## P5.js Tutorial
+## Leap Motion with P5.js
 1. Upload the following libraries to your P5.js sketch
    - [p5.collide2d.js](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/P5-Brick-Breaker/p5.collide2d.js)
    - [leap-1.1.1.min.js](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/P5-Brick-Breaker/leap-1.1.1.min.js)
