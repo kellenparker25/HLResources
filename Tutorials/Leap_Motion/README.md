@@ -34,3 +34,17 @@ We need to use legacy software which is only supports on Windows os.**
         </body>
       </html>
    ```
+6. Add this to the script.js file (at the bottom outside the draw loop)
+   ```
+   var options = {enableGestures: true};
+   console.log("running…");
+
+   Leap.loop(options, function(frame){
+   	if (frame.hands.length  > 0){
+   	  for(var i = 0; i < frame.hands.length; i++){
+            // this is where you'll extract data from the hands detected!
+            console.log(frame.hands[i]);
+   	  }
+   	}  
+   });
+   ```
