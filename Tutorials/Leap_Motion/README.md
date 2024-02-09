@@ -2,7 +2,7 @@
 Leap Motion Controller is a hand-tracking system designed to be placed on a physical desktop or mounted to VR headset.
 
 **The [latest Leap software](https://leap2.ultraleap.com/gemini-downloads/) doesn't support websockets, which means you can't connect it to the P5 web editor.
-We need to use legacy software which is only supports on Windows os.**
+We need to use legacy software which only runs on Windows os.**
 
 ## SETUP
 1. Use a Windows 7+ machine
