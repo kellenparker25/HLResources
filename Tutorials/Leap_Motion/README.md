@@ -1,15 +1,15 @@
-# Leap Motion Controller 1
+# Leap Motion with P5.js online web editor
 Leap Motion Controller is a hand-tracking system designed to be placed on a physical desktop or mounted to VR headset.
 
-In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Controller is the older model now only supported by Windows machines. 
-[Ultraleap's Leap Motion 2 is the latest model](https://leap2.ultraleap.com/)
-## Setup
-1. Use a Windows 7+ machine
-2. [Create an account or login to Ultraleap](https://leap2.ultraleap.com/account-register/)
-4. Download [Legacy Orion 4.1 Handtracking Software](https://staging.corporate.ultraleap.com/download/software?name=tracking-software&version=4.1.0&platform=windows)
-5. Plug in Leap to computer and a new leap motion icon should appear. It should be green.
+**The [latest Leap software](https://leap2.ultraleap.com/gemini-downloads/) doesn't support websockets, which means you can't connect it to the P5 web editor.
+We need to use legacy software which is only supports on Windows os.**
 
-## Using Leap Motion Controller 1 with P5.js online editor
+## SETUP
+1. Use a Windows 7+ machine
+2. Download [Legacy Orion 4.1 Handtracking Software](https://staging.corporate.ultraleap.com/download/software?name=tracking-software&version=4.1.0&platform=windows)
+3. Plug in Leap to computer and a new leap motion icon should appear. It should be green.
+
+## TUTORIAL
 1. Open [Brick Breaker](https://editor.p5js.org/HybridLabCCA/sketches/CS4ZA99aJ) and see if it works
 2. Create a new p5 project
 3. Download leap p5 library [here](https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Leap_Motion/leap-1.1.1.min.js)
@@ -34,6 +34,3 @@ In 2019 Leap Motion and Ultrahaptics merged to form Ultraleap. Leap Motion Contr
         </body>
       </html>
    ```
-## Examples
-1. P5.js Examples
-   - [Brick Breaker](https://editor.p5js.org/HybridLabCCA/sketches/CS4ZA99aJ)
