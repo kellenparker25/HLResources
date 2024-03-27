@@ -2,6 +2,7 @@
 <img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>
 
 ## Equipment
+Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinkercad.com/things/cYTtEqcJcwH-amazing-fulffy/editel?tenant=circuits)
 - [Arduino Uno](https://airtable.com/appCpmcjYA1vwj8jn/tblOHGyZIGOZuJhCj/viwcQ6Lj5fpoG6Hvh/recQ1P43HKyVMjA79?blocks=hide)
 - [HC-SR04 Ultrasonic distance sensor](https://airtable.com/appCpmcjYA1vwj8jn/tblZBoJcxkwHEMrXX/viwnKOWwUT76Q9RQV/recMg76eFUkjVesqo?blocks=hide)
 - [SSD1306 0.96 inch I2C OLED](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recW9AWeKOTIZbg60?blocks=hide)
