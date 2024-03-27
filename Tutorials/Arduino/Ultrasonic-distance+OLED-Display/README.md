@@ -1,5 +1,6 @@
 # Ultrasonic Distance Sensor + OLED Display
-<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>
+|<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Arduino/Ultrasonic-distance%2BOLED-Display/wiring-ultrasonic-distance%2BOLED-display.png" width="600"/>|
+|--|--|
 
 ## Equipment
 Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinkercad.com/things/cYTtEqcJcwH-amazing-fulffy/editel?tenant=circuits)
