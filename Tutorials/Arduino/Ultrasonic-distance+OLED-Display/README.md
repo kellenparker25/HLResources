@@ -1,7 +1,6 @@
 # Ultrasonic Distance Sensor + OLED Display
-Demo Photo             |  Demo Video
-:-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>
+
 ## Equipment
 - [Arduino Uno](https://airtable.com/appCpmcjYA1vwj8jn/tblOHGyZIGOZuJhCj/viwcQ6Lj5fpoG6Hvh/recQ1P43HKyVMjA79?blocks=hide)
 - [HC-SR04 Ultrasonic distance sensor](https://airtable.com/appCpmcjYA1vwj8jn/tblZBoJcxkwHEMrXX/viwnKOWwUT76Q9RQV/recMg76eFUkjVesqo?blocks=hide)
@@ -84,4 +83,3 @@ void loop() {
   display.display();
 }
 ```
-    
