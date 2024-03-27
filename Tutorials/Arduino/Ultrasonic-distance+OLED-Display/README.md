@@ -8,9 +8,15 @@ Demo Photo             |  Demo Video
 - [SSD1306 0.96 inch I2C OLED](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recW9AWeKOTIZbg60?blocks=hide)
 - [Breadboard](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recF514LASWf2n9LH?blocks=hide)
 ## Step 1: Read Data from Ultrasonic Distance Sensor
+### How it works
+### Wiring
+### Code
 https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/
 
 ## Step 2: Printing to OLED Display
+### How it works
+### Wiring
+### Code
 https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/
 ## Step 3: Put them together!
 
