@@ -15,7 +15,6 @@
 - Follow [this guide](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/) <br/>
   *note: complete through the "“Hello, world!” OLED Display"*
 #### Move on to Step 3 once you see "Hello, world!" printed on display
-https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/
 ## Step 3: Put them together!
 ```C++
 #include <Wire.h>
