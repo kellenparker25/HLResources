@@ -6,7 +6,7 @@ We need to use legacy software which only runs on Windows os.**
 
 ## SETUP
 1. Use a Windows 7+ machine
-2. Download [Legacy Orion 4.1 Handtracking Software](https://staging.corporate.ultraleap.com/download/software?name=tracking-software&version=4.1.0&platform=windows)
+2. Download [Legacy Orion 4.1 Handtracking Software](https://ultrahaptics.box.com/s/jhstozjylvdo18ztgo2byomgphdvqr42)
 3. Plug in Leap to computer and a new leap motion icon should appear. It should be green.
 
 ## TUTORIAL
