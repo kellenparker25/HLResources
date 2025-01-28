@@ -1,5 +1,5 @@
 # Ultrasonic Distance Sensor + OLED Display
-|<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Arduino/Ultrasonic-distance%2BOLED-Display/wiring-ultrasonic-distance%2BOLED-display.png" width="600"/>|
+|<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Tutorials/Arduino/Ultrasonic_Sendor%2BOLED-Display/wiring-ultrasonic-distance%2BOLED-display.png" width="600"/>|
 |--|--|
 
 ## Equipment
@@ -9,9 +9,57 @@ Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinker
 - [SSD1306 0.96 inch I2C OLED](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recW9AWeKOTIZbg60?blocks=hide)
 - [Breadboard](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recF514LASWf2n9LH?blocks=hide)
 ## Step 1: Ultrasonic Distance Sensor
-- Follow [Mechatronics Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
-- Watch [Mechatronics Video Tutorial (included in above tutorial)](https://www.youtube.com/watch?v=ZejQOX69K5M&t=20s) <br/>
-*note: the video uses pin 9 and 10 for trig and echo respectively. Our demo uses pin 6 and 5 for trig and echo respectively.*
+A distance measuring sensor which has a range from 2cm to 400cm (about an inch to 13 feet). Best used for accurately measuring the distance to an object within a specific range, particularly when you want to detect the presence or proximity of an object without direct contact, making it useful for applications like obstacle avoidance, line following, automated door opening, or level detection in a robot or device. 
+### How does the sensor work?
+The sensor is composed of two ultrasonic transducers. One is transmitter which outputs ultrasonic sound pulses and the other is receiver which listens for reflected waves. It’s basically a SONAR which is used in submarines for detecting underwater objects.
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Technical.png" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
+
+More thorough hardware details in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
+### How to the calculate distance
+Distance = (Speed x Time) / 2 <br /> <br /> 
+Example: Let’s say the Echo pin was HIGH for 2ms. If we want the get the distance result in **cm**, we can convert the speed of sound value from 340m/s to 34cm/ms. <br />
+- Speed = 34cm/ms <br />
+- Time = 2ms <br />
+
+Distance = (Speed x Time) / 2 = (34cm/ms x 2ms) / 2 = 25.5cm.  <br />  <br /> 
+**Arduino Code:** <br /> 
+Code Step-by-Step Explanation in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
+```C++
+  /*
+  Ultrasonic Sensor HC-SR04 and Arduino Tutorial
+
+  by Dejan Nedelkovski,
+  www.HowToMechatronics.com
+*/
+
+// defines pins numbers
+const int trigPin = 9;
+const int echoPin = 10;
+// defines variables
+long duration;
+int distance;
+void setup() {
+  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+  pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+  Serial.begin(9600); // Starts the serial communication
+}
+void loop() {
+  // Clears the trigPin
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigPin on HIGH state for 10 micro seconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  // Reads the echoPin, returns the sound wave travel time in microseconds
+  duration = pulseIn(echoPin, HIGH);
+  // Calculating the distance
+  distance = duration * 0.034 / 2;
+  // Prints the distance on the Serial Monitor
+  Serial.print("Distance: ");
+  Serial.println(distance);
+}
+```
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 2: OLED Display
 - Follow [this guide](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/) <br/>
@@ -84,3 +132,6 @@ void loop() {
   display.display();
 }
 ```
+
+- Watch [Mechatronics Video Tutorial (included in above tutorial)](https://www.youtube.com/watch?v=ZejQOX69K5M&t=20s) <br/>
+*note: the video uses pin 9 and 10 for trig and echo respectively. Our demo uses pin 6 and 5 for trig and echo respectively.*
