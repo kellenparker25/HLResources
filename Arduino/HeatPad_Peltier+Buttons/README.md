@@ -11,10 +11,10 @@ Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinker
 - [Electric Heatpad](https://www.adafruit.com/product/1481)
 - [Peltier Thermo-Electric Cooler Module](https://www.adafruit.com/product/1331)
 
-## Step 1: Buttons
+## <h2 style="color: red;">Step 1: Buttons</h2>
 Little clicky switches are standard input "buttons" on electronic projects. These work best in a PCB but can be used on a solderless breadboard as shown in this tutorial. The pins are normally open (disconnected) and when the button is pressed they are momentarily closed.
 
-|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Tactile_Button.jpg" width="500"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="500"/>|
 
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 2: MOSFET Module Driver
@@ -79,9 +79,9 @@ void loop() {
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 3: Electric Heating Pad
 A distance measuring sensor which has a range from 2cm to 400cm (about an inch to 13 feet). Best used for accurately measuring the distance to an object within a specific range, particularly when you want to detect the presence or proximity of an object without direct contact, making it useful for applications like obstacle avoidance, line following, automated door opening, or level detection in a robot or device. 
-### How do button inputs work?
+### How does the Electric Heating Pad work?
 The sensor is composed of two ultrasonic transducers. One is transmitter which outputs ultrasonic sound pulses and the other is receiver which listens for reflected waves. It’s basically a SONAR which is used in submarines for detecting underwater objects.
-|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Technical.png" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
 
 More thorough hardware details in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
 ### How to the calculate distance
