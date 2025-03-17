@@ -11,7 +11,7 @@ Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinker
 - [Electric Heatpad](https://www.adafruit.com/product/1481)
 - [Peltier Thermo-Electric Cooler Module](https://www.adafruit.com/product/1331)
 
-## <h2 style="color: red;">Step 1: Buttons</h2>
+## 🔴 Step 1: Buttons
 Little clicky switches are standard input "buttons" on electronic projects. These work best in a PCB but can be used on a solderless breadboard as shown in this tutorial. The pins are normally open (disconnected) and when the button is pressed they are momentarily closed.
 
 <img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Tactile_Button.jpg" width="500"/>
@@ -132,16 +132,11 @@ void loop() {
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 4: Peltier Thermo-Electric Cooler
 A distance measuring sensor which has a range from 2cm to 400cm (about an inch to 13 feet). Best used for accurately measuring the distance to an object within a specific range, particularly when you want to detect the presence or proximity of an object without direct contact, making it useful for applications like obstacle avoidance, line following, automated door opening, or level detection in a robot or device. 
-### How do button inputs work?
+### How does the Peltier work?
 The sensor is composed of two ultrasonic transducers. One is transmitter which outputs ultrasonic sound pulses and the other is receiver which listens for reflected waves. It’s basically a SONAR which is used in submarines for detecting underwater objects.
-|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Technical.png" width="650"/>
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Peltier_Thermo_Electric.jpeg" width="650"/>
 
 More thorough hardware details in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
-### How to the calculate distance
-Distance = (Speed x Time) / 2 <br /> <br /> 
-Example: Let’s say the Echo pin was HIGH for 2ms. If we want the get the distance result in **cm**, we can convert the speed of sound value from 340m/s to 34cm/ms. <br />
-- Speed = 34cm/ms <br />
-- Time = 2ms <br />
 
 Distance = (Speed x Time) / 2 = (34cm/ms x 2ms) / 2 = 25.5cm.  <br />  <br /> 
 **Arduino Code:** <br /> 
@@ -184,6 +179,6 @@ void loop() {
 ```
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 5: Put them all together!
-- Follow [this guide](https://randomnerdtutorials.com/guide-for-oled-display-with-arduino/) <br/>
-  *note: complete through the "“Hello, world!” OLED Display"*
-#### Move on to Step 3 once you see "Hello, world!" printed on display
+The sensor is composed of two ultrasonic transducers. One is transmitter which outputs ultrasonic sound pulses and the other is receiver which listens for reflected waves. It’s basically a SONAR which is used in submarines for detecting underwater objects.
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Peltier_Thermo_Electric.jpeg" width="500"/>
+<br/>
