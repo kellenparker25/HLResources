@@ -1,23 +1,20 @@
-# <b> Heatpad, Peltier + Buttons Tutorial </b> 
-|<img src="https://github.com/CCAHybridLab/HLResources/assets/63166855/fdc98498-3b51-4776-a57e-e7fd0a68bac4" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Arduino/Ultrasonic_Sensor+OLED-Display/wiring-ultrasonic-distance+OLED-display.png" width="600"/>|
+# <b> Electric Heatpad + Peltier Thermo-Electric Cooler </b> 
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Arduino/Ultrasonic_Sensor+OLED-Display/wiring-ultrasonic-distance+OLED-display.png" width="600"/>|
 |--|--|
 
 ## Equipment
 Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinkercad.com/things/cYTtEqcJcwH-amazing-fulffy/editel?tenant=circuits)
 - [Arduino Uno](https://airtable.com/appCpmcjYA1vwj8jn/tblOHGyZIGOZuJhCj/viwcQ6Lj5fpoG6Hvh/recQ1P43HKyVMjA79?blocks=hide)
-- [HC-SR04 Ultrasonic distance sensor](https://airtable.com/appCpmcjYA1vwj8jn/tblZBoJcxkwHEMrXX/viwnKOWwUT76Q9RQV/recMg76eFUkjVesqo?blocks=hide)
-- [SSD1306 0.96 inch I2C OLED](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recW9AWeKOTIZbg60?blocks=hide)
 - [Breadboard](https://airtable.com/appCpmcjYA1vwj8jn/tblZz5NUA546g9J6o/viwu3SMJU1AEGhMGK/recF514LASWf2n9LH?blocks=hide)
+- [Buttons](https://www.adafruit.com/product/1481)
+- [MOSFET Module Driver](https://www.adafruit.com/product/1481)
+- [Electric Heatpad](https://www.adafruit.com/product/1481)
+- [Peltier Thermo-Electric Cooler Module](https://www.adafruit.com/product/1331)
+
 ## Step 1: Buttons
 Little clicky switches are standard input "buttons" on electronic projects. These work best in a PCB but can be used on a solderless breadboard as shown in this tutorial. The pins are normally open (disconnected) and when the button is pressed they are momentarily closed.
 
-### How to the calculate distance
-Distance = (Speed x Time) / 2 <br /> <br /> 
-Example: Let’s say the Echo pin was HIGH for 2ms. If we want the get the distance result in **cm**, we can convert the speed of sound value from 340m/s to 34cm/ms. <br />
-- Speed = 34cm/ms <br />
-- Time = 2ms <br />
-
-Distance = (Speed x Time) / 2 = (34cm/ms x 2ms) / 2 = 25.5cm.  <br />  <br /> 
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
 
 #### Move on to Step 2 once you're seeing accurate distance data on serial monitor
 ## Step 2: MOSFET Module Driver
@@ -31,11 +28,10 @@ Lastly, the V- & V+ pins on the driver are used as the positive and negative for
 
 Please note, if the SIG signal is high (e.g., 5V), the MOSFET turns on, and current flows. If the SIG signal is low (0V), the MOSFET is off, and no current flows through. 
 
-
-|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Technical.png" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="650"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Ultrasonic-Pinout.png" width="350"/>|
 
 More thorough hardware details in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
-### How to the calculate distance
+### How to the calculate voltage
 Distance = (Speed x Time) / 2 <br /> <br /> 
 Example: Let’s say the Echo pin was HIGH for 2ms. If we want the get the distance result in **cm**, we can convert the speed of sound value from 340m/s to 34cm/ms. <br />
 - Speed = 34cm/ms <br />
