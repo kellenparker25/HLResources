@@ -1,5 +1,5 @@
 # <b> Neopixel Matrix + Joystick </b> 
-|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Arduino/Ultrasonic_Sensor+OLED-Display/wiring-ultrasonic-distance+OLED-display.png" width="600"/>|
+|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Joystick.jpeg" width="400"/>|<img src="https://github.com/CCAHybridLab/HLResources/blob/main/Arduino/Ultrasonic_Sensor+OLED-Display/wiring-ultrasonic-distance+OLED-display.png" width="600"/>|
 |--|--|
 
 ## Equipment
@@ -12,7 +12,7 @@ Don't have the parts? Build and test digitally on [Tinkercad](https://www.tinker
 ## Step 1: Joystick
 Little clicky switches are standard input "buttons" on electronic projects. These work best in a PCB but can be used on a solderless breadboard as shown in this tutorial. The pins are normally open (disconnected) and when the button is pressed they are momentarily closed.
 
-<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Tactile_Button.jpg" width="500"/>
+<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Joystick.jpeg" width="500"/>
 
 #### Move on to Step 2 once you've mimiced the diagram above. 
 ## Step 2: Neopixel Matrix
@@ -26,7 +26,7 @@ Lastly, the <b> V- & V+ </b> pins on the driver are used as the positive and neg
 
 <b> *Please note, if the SIG signal is high (e.g., 5V), the MOSFET turns on, and current flows. If the SIG signal is low (0V), the MOSFET is off, and no current flows through. </b>
 
-<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/MOSFET_Driver.jpg" width="550"/>
+<img src="https://github.com/CCAHybridLab/HLResources/blob/main/assets/Matrix_Off.jpg" width="550"/>
 
 More thorough hardware details in [Mechatronic's Guide](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
 ### How to the calculate voltage
